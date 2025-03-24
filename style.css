@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+} 
+.container > div{
+  border: 1px solid black;
+}
+.header{
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 1fr 1fr ;
+
+}
+.search{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  align-items: center;
+}
+#search-icon{
+  grid-column: 1/2;
+}
+.search-bar{
+  grid-column: 2/8;
+}
+.search-bar>input{
+  border: 2px, solid, black;
+  border-radius: 16px;
+  width: 100%;
+}
+.header-user{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+.header>div{
+}
+#bell-icon{
+  grid-column: 3;
+}
+#header-pfp{
+  grid-column: 4;
+}
+#header-username{
+  grid-column: 5/8;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.search-icon>img{
+  max-width: 25px;
+  max-height: 25px;
+}
+.pfp{
+  max-width: 50px;
+  max-height: 50px;
+}
+.profile-header{
+  
+}
+.sidebar{
+  grid-column: 1/2;
+  grid-row: 1/6;
+}
+.project{
+
+}
+.noti{
+
+}
+.trending{
+
+}
