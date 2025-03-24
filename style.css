@@ -49,8 +49,7 @@ img{
   grid-template-columns: repeat(8, 1fr);
   align-items: center;
 }
-.header>div{
-}
+
 #bell-icon{
   grid-column: 3;
 }
@@ -71,9 +70,7 @@ img{
   max-width: 50px;
   max-height: 50px;
 }
-.profile-header{
-  
-}
+
 .sidebar{
   background-color: #3498db;
   color: white;
@@ -125,12 +122,4 @@ img{
   max-width: 25px;
   max-height: 25px;
 }
-.project{
 
-}
-.noti{
-
-}
-.trending{
-
-}
