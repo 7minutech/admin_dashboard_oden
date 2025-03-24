@@ -39,6 +39,10 @@ img{
   border: 2px, solid, black;
   border-radius: 16px;
   width: 100%;
+  background-color: #b0c4de;
+  padding: 4px;
+  padding-left: 10px;
+  text-align: initial;
 }
 .header-user{
   display: grid;
