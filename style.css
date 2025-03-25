@@ -136,8 +136,8 @@ img{
   display: grid;
   grid-column: 2/4;
   grid-template-columns: repeat(2,1fr);
-  border: 1px solid transparent; 
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+  border: 1px solid transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 #profile-pfp{
   max-width: 75px;
@@ -216,16 +216,16 @@ img{
   grid-template-rows: repeat(2,1fr);
   border: 1px solid transparent; 
   border-left: 8px solid #FFC107;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   border-radius: 4px;
-  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 .card-icons{
   display: grid;
-  max-width: 25px;
-  max-height: 25px;
-  grid-template-columns: repeat(14,25px);
-  grid-template-rows: repeat(6,25px);
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(6,1fr);
 }
 .card-text{
   display: grid;
@@ -233,19 +233,24 @@ img{
 }
 .title{
   font-weight: bold;
+  justify-self: start;
 }
 .description{
   font-size: 0.8rem;
+  justify-self: start;
 }
+
 .star,.eye,.share{
-  grid-row: 5;
+  max-width: 25px;
+  max-height: 25px;
+  grid-row: 3;
 }
 .star{
-  grid-column: -4;
+  grid-column: 4;
 }
 .eye{
-  grid-column: -3;
+  grid-column: 5;
 }
 .share{
-  grid-column: -2;
+  grid-column: 6;
 }
