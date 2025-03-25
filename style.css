@@ -160,6 +160,7 @@ img{
 }
 .greeting{
   font-size: 0.75rem;
+  justify-self: start;
 }
 .username{
   text-wrap: nowrap;
