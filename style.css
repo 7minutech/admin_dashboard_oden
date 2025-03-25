@@ -30,6 +30,7 @@ img{
   display: grid;
   grid-column: 2/4;
   grid-template-columns: 1fr 1fr ;
+  padding-top: 20px;
 }
 .search{
   display: grid;
