@@ -256,3 +256,38 @@ img{
 .share{
   grid-column: 6;
 }
+.noti{
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+.noti-body{
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  margin-right: 20px;
+  row-gap: 5px;
+}
+.noti-card{
+  padding-top: 10px;
+}
+.noti-title{
+  font-size: 0.7rem;
+}
+.noti-description{
+  color: #4A4A4A;
+  font-size: 0.6rem;
+}
+.noti-header{
+  font-weight: bold;
+  align-self: center;
+  justify-self: start;
+}
+#noti-card-1{
+  border-bottom: 1px solid #B0B0B0;
+}
+#noti-card-3{
+  border-top: 1px solid #B0B0B0;
+}
