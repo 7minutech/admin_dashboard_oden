@@ -10,6 +10,9 @@ html,body{
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: #c0d6e4;
+}
 img{
   max-width: 100%;
   height: auto;
@@ -18,16 +21,15 @@ img{
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  gap: 4px;
 } 
 .container > div{
   /* border: 1px solid black; */
 }
 .header{
+  background-color: white;
   display: grid;
   grid-column: 2/4;
   grid-template-columns: 1fr 1fr ;
-
 }
 .search{
   display: grid;
@@ -85,6 +87,7 @@ img{
   display: grid;
   grid-template-rows: repeat(8, 100px);
   row-gap: 10px;
+  padding-right: 10px;
 }
 .sidebar-header{
   grid-row: 1/2;
@@ -129,6 +132,7 @@ img{
 }
 
 .profile-header{
+  background-color: white;
   display: grid;
   grid-column: 2/4;
   grid-template-columns: repeat(2,1fr);
@@ -187,4 +191,61 @@ img{
 }
 .action>button:active{
   background-color: #2980b9;
+}
+.project{
+  background-color: #c0d6e4;
+  display: grid;
+  gap: 15px;
+}
+.cards{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.project-title{
+  font-weight: bold;
+  justify-self: start;
+  align-self: center;
+  padding-left: 20px;
+}
+.card{
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  border: 1px solid transparent; 
+  border-left: 8px solid #FFC107;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+.card-icons{
+  display: grid;
+  max-width: 25px;
+  max-height: 25px;
+  grid-template-columns: repeat(14,25px);
+  grid-template-rows: repeat(6,25px);
+}
+.card-text{
+  display: grid;
+  align-items: center;
+}
+.title{
+  font-weight: bold;
+}
+.description{
+  font-size: 0.8rem;
+}
+.star,.eye,.share{
+  grid-row: 5;
+}
+.star{
+  grid-column: -4;
+}
+.eye{
+  grid-column: -3;
+}
+.share{
+  grid-column: -2;
 }
