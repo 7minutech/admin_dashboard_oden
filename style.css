@@ -20,6 +20,7 @@ img{
 .container {
   text-align: center;
   display: grid;
+  grid-template-rows: 100px 100px 400px 1fr;
   grid-template-columns: 1fr 5fr 1fr;
 } 
 .container > div{
@@ -290,4 +291,47 @@ img{
 }
 #noti-card-3{
   border-top: 1px solid #B0B0B0;
+}
+.trending{
+  grid-column: 3/4;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.trending-header{
+  font-weight: bold;
+  justify-self: start;
+}
+.trending-body{
+  padding: 10px;
+  background-color: white;
+  display: grid;
+  row-gap: 10px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+}
+.trending-card{
+  display: grid;
+  grid-template-columns: repeat(4,50px);
+  column-gap: 20px;
+}
+.trending-details{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+}
+.trending-icon{
+  grid-column: 2;
+  max-width: 50px;
+  max-height: 50px;
+}
+.username{
+  justify-self: start;
+  font-size: 0.6rem;
+}
+.user-project{
+  justify-self: start;
+  font-size: 0.6rem;
+  text-wrap: nowrap;
 }
